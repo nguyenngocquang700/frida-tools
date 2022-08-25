@@ -84,7 +84,7 @@ def call_def(func, num=1):
 
 
 def ver_check():
-    ver_url = "https://raw.githubusercontent.com/nguyenngocquang700/frida-tools/blob/main/conf/version.txt"
+    ver_url = "https://raw.githubusercontent.com/nguyenngocquang700/frida-tools/main/conf/version.txt"
     try:
         ver_rqst = requests.get(ver_url)
         ver_sc = ver_rqst.status_code

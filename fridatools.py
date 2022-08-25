@@ -154,7 +154,7 @@ def main():
         print(
             conf.colored("[>]", "red", attrs=["bold"]) + conf.colored(
                 f" Version : {conf.version}\n", "magenta", attrs=["bold"]))
-        # conf.ver_check()
+        conf.ver_check()
         print(
             "==================================================================="
         )

@@ -25,16 +25,16 @@ version = "1.0.0"
 home = os.path.expanduser("~")
 
 
-def re_open():
-    installed = True if os.path.exists("/usr/local/bin/webmap") else False
+# def re_open():
+#     installed = True if os.path.exists("/usr/local/bin/webmap") else False
 
-    if installed:
-        os.system("sudo webmap")
-        sys.exit()
+#     if installed:
+#         os.system("sudo webmap")
+#         sys.exit()
 
-    else:
-        os.system("sudo python3 webmap.py")
-        sys.exit(())
+#     else:
+#         os.system("sudo python3 webmap.py")
+#         sys.exit(())
 
 
 def clear():
@@ -84,7 +84,7 @@ def call_def(func, num=1):
 
 
 def ver_check():
-    ver_url = "https://raw.githubusercontent.com/Anteste/WebMap/master/conf/version.txt"
+    ver_url = "https://raw.githubusercontent.com/nguyenngocquang700/frida-tools/blob/main/conf/version.txt"
     try:
         ver_rqst = requests.get(ver_url)
         ver_sc = ver_rqst.status_code
@@ -95,14 +95,14 @@ def ver_check():
             if version == github_ver:
                 print(
                     colored(
-                        "Your WebMap version is Up-To-Date\n",
+                        "Your Frida-tools version is Up-To-Date\n",
                         "yellow",
                         attrs=["reverse"],
                     ))
             else:
                 print(
                     colored(
-                        f"Your WebMap version is Out-Dated, New _version Available: {format(github_ver)} \n",
+                        f"Your Frida-tools version is Out-Dated, New _version Available: {format(github_ver)} \n",
                         "red",
                         attrs=["reverse"],
                     ))
